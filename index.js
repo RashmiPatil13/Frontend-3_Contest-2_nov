@@ -75,7 +75,8 @@ confirmPasswordInput.addEventListener('input', (event)=>{
         passwordMatchMessage.className = 'red'
         passwordMatchMessage.style.color = '#dc3545'
     }else{
-     
+        passwordMatchMessage.innerHTML = `Password is matched`
+        passwordMatchMessage.className = 'green'
     }
     
 })
