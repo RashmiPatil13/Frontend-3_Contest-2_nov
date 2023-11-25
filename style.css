@@ -1,0 +1,61 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+
+    background-image: url(Background\ Pattern.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    background-position-y:200px ;
+    background-color: #f8fafc;
+    position: relative; 
+}
+#hero{
+    width: 444px;
+    height: 597px;
+    margin-top: 100px;
+    margin-left: 478px;
+    border-radius: 4px;
+    /* background-color: rgb(239, 232, 232); */
+    box-shadow: 12px 9px 18px 19px rgba(1, 0, 0, 0.096);
+    
+}
+.size{
+    height: 40px;
+    width: 350px;
+    border-radius: 5px;
+    
+    border: 2px solid #DEDEDE;
+
+}
+#submit-btn{
+    background-color: blue;
+    color: white;
+    width: 350px;
+    height: 40px;
+    border: none;
+}
+
+
+
+
+@media only screen and (max-width : 680px) {
+    #hero{ 
+        width: 518px;
+    }
+}    
+@media only screen and (max-width : 480px) {
+    #hero{ 
+        width: 418px;
+        height: 900px;
+    }
+   
+}    
+@media only screen and (max-width : 350px) {
+    #hero{ 
+        width: 278px;
+    }
+    
+} 
