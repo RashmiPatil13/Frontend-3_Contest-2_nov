@@ -40,7 +40,7 @@ signupForm.addEventListener('submit', function (event) {
   // Generate a random 16-byte access token
   const accessToken = generateRandomToken();
 
-  // Store user details in local storage
+  
   const user = {
     username: username,
     email: email,
@@ -69,7 +69,7 @@ function isValidUsername(username) {
 
 //show message--> password and confirmPassword match or not
 confirmPasswordInput.addEventListener('input', (event)=>{
-    // console.log(event.target.value);
+    
     if(event.target.value !== passwordInput.value ){
         passwordMatchMessage.innerHTML = `Password is not matching...<span class="material-symbols-outlined">cancel</span>`
         passwordMatchMessage.className = 'red'
@@ -79,10 +79,7 @@ confirmPasswordInput.addEventListener('input', (event)=>{
     }
     
 })
- 
-//check password field is given some value or not  
-//if no value--> confirmPassword field will be empty & disabled and passwordMathMessage field will be empty
-//if any value given--> confirmPassword field will be active
+
 passwordInput.addEventListener('input',(event)=>{
     if(event.target.value){
         confirmPasswordInput.removeAttribute('disabled')
@@ -99,7 +96,7 @@ passwordInput.addEventListener('input',(event)=>{
 
 //strong password checker function
 function isPasswordStrong(password) {
-  // Strong password regex with minimum 8 characters, uppercase, lowercase, numbers, and special characters
+  
   const strongPasswordRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*()_+])[0-9a-zA-Z!@#$%^&*()_+]{8,}$/;
   return strongPasswordRegex.test(password);
 }
