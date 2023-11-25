@@ -41,21 +41,3 @@ body{
 
 
 
-@media only screen and (max-width : 680px) {
-    #hero{ 
-        width: 518px;
-    }
-}    
-@media only screen and (max-width : 480px) {
-    #hero{ 
-        width: 418px;
-        height: 900px;
-    }
-   
-}    
-@media only screen and (max-width : 350px) {
-    #hero{ 
-        width: 278px;
-    }
-    
-} 
